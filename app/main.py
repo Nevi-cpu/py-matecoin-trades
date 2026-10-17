@@ -25,7 +25,7 @@ def calculate_profit(trades_file_name: str) -> None:
               "matecoin_account": str(matecoin_account)}
 
     with open("profit.json", "w") as file:
-        json.dump(profit, file, indent=4)
+        json.dump(profit, file, indent=2)
 
 
 if __name__ == "__main__":
