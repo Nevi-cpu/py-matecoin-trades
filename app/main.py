@@ -1,4 +1,5 @@
 import json
+import sys
 from decimal import Decimal
 
 
@@ -27,4 +28,5 @@ def calculate_profit(trades_file_name: str) -> None:
         json.dump(profit, file)
 
 
-calculate_profit("trades.json")
+if __name__ == "__main__":
+    calculate_profit(sys.argv[1])
